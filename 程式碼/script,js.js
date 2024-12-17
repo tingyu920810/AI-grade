@@ -1,14 +1,12 @@
-console.log("JavaScript已加載！");
-
+// 當表單提交時，執行以下操作
 document.getElementById('gradeForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+    event.preventDefault();  // 阻止表單提交，防止頁面刷新
 
     const grade = parseInt(document.getElementById('grade').value);
-    console.log(`用戶輸入的成績: ${grade}`);  // 顯示用戶輸入的成績
-
     let resultText = '';
     let detailedEvaluation = '';
 
+    // 根據成績給予評價
     if (grade >= 90) {
         resultText = '成績優異，A級！';
         detailedEvaluation = '這個成績顯示出學生非常優秀，具備了深厚的理解和掌握能力。繼續保持並挑戰更高級別的學習，積極參與更具挑戰性的課題。';
@@ -26,9 +24,10 @@ document.getElementById('gradeForm').addEventListener('submit', function(event) 
         detailedEvaluation = '這個成績表明學生未能充分理解課程內容，需要積極改進。建議從基礎開始重新學習，尋求額外的幫助，並設定可達成的小目標。';
     }
 
+    // 顯示結果
     document.getElementById('result').innerHTML = `
         <h3>${resultText}</h3>
         <p>${detailedEvaluation}</p>
     `;
-    document.getElementById('result').style.display = 'block';
+    document.getElementById('result').style.display = 'block';  // 顯示結果區域
 });
