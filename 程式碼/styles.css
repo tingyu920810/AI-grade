@@ -1,64 +1,80 @@
+/* 設定整體頁面背景和字體 */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4;  /* 淺灰色背景 */
 }
 
+/* 設置頁面頭部 */
 header {
-    background-color: #333;
-    color: white;
+    background-color: #333;  /* 深灰色背景 */
+    color: white;  /* 白色字體 */
     padding: 20px;
     text-align: center;
 }
 
+/* 設置主要內容區 */
 main {
     padding: 20px;
 }
 
+/* 容器，用於放置表單 */
 .container {
     max-width: 600px;
     margin: 0 auto;
-    background-color: white;
+    background-color: white;  /* 白色背景 */
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;  /* 圓角 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* 輕微的陰影效果 */
 }
 
+/* 表單樣式 */
 form {
-    margin-bottom: 20px;
+    margin-bottom: 20px;  /* 底部間距 */
 }
 
+/* 輸入框樣式 */
 input[type="number"] {
     padding: 8px;
-    margin-right: 10px;
-    width: 100px;
+    margin-right: 10px;  /* 右側間距 */
+    width: 100%;  /* 使輸入框寬度占滿整個容器 */
+    border: 1px solid #ccc;  /* 淺灰色邊框 */
+    border-radius: 4px;  /* 圓角邊框 */
+    font-size: 16px;  /* 字體大小 */
 }
 
+/* 按鈕樣式 */
 button {
-    padding: 8px 12px;
-    background-color: #4CAF50;
-    color: white;
+    padding: 10px 20px;  /* 內邊距 */
+    background-color: #4CAF50;  /* 綠色背景 */
+    color: white;  /* 白色字體 */
     border: none;
-    cursor: pointer;
+    cursor: pointer;  /* 鼠標懸停時顯示為指針 */
     font-size: 16px;
+    border-radius: 4px;  /* 圓角邊框 */
+    transition: background-color 0.3s ease;  /* 加入過渡效果 */
 }
 
+/* 按鈕懸停效果 */
 button:hover {
-    background-color: #45a049;
+    background-color: #45a049;  /* 懸停時顏色稍微變暗 */
 }
 
+/* 結果顯示區域 */
 .result {
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #f9f9f9;
-    display: none;
+    background-color: #f9f9f9;  /* 輕微的背景顏色 */
+    display: none;  /* 初始為隱藏 */
+    margin-top: 20px;
 }
 
+/* 設置頁尾 */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #333;  /* 深灰色背景 */
+    color: white;  /* 白色字體 */
     text-align: center;
     padding: 10px 0;
     position: fixed;
